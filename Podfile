@@ -1,4 +1,5 @@
 platform :osx, "10.9"
+inhibit_all_warnings!
 
 target "CocoaHeads-AFNetworkingExample" do
 	pod 'AFNetworking'
