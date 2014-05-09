@@ -12,7 +12,7 @@
 
 + (instancetype)serializer
 {
-    return [[self alloc] init];
+    return [[JRSSpaceDelimitedResponseSerializer alloc] init];
 }
 
 - (instancetype)init
