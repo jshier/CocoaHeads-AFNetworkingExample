@@ -36,10 +36,10 @@ describe(@"JRSSpaceDelimitedResponseSerializer", ^{
     });
     
     it(@"should return successfully", ^{
-        [[expectFutureValue(returnedArray) should] beNonNil];
-        [[expectFutureValue(returnedError) should] beNil];
+        [[expectFutureValue(returnedArray) shouldEventually] beNonNil];
+        [[expectFutureValue(returnedError) shouldEventually] beNil];
         
-        [[expectFutureValue(returnedArray) should] equal:@[@[@"one", @"two", @"three"], @[@"four", @"five", @"six"]]];
+        [[expectFutureValue(returnedArray) shouldEventually] equal:@[@[@"one", @"two", @"three"], @[@"four", @"five", @"six"]]];
     });
 });
 
